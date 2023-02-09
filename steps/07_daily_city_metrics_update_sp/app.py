@@ -113,6 +113,8 @@ if __name__ == '__main__':
 
     from utils import snowpark_utils
     session = snowpark_utils.get_snowpark_session()
+   
+ 
 
     if len(sys.argv) > 1:
         print(main(session, *sys.argv[1:]))  # type: ignore
